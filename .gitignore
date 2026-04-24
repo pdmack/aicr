@@ -133,6 +133,7 @@ site/docs/conformance/index.md
 
 # Claude
 .claude/settings.local.json
+CLAUDE.md
 docs/plans
 .worktrees/
 

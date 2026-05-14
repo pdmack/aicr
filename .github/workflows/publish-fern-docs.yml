@@ -46,7 +46,7 @@ jobs:
 
       - name: Checkout frozen version content
         run: |
-          set -o pipefail
+          set -eo pipefail
           for version_file in fern/versions/v*.yml; do
             version=$(basename "$version_file" .yml)
             if git show-ref --verify --quiet "refs/tags/${version}"; then
